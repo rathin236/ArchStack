@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en" className={`scroll-smooth ${montserrat.variable} ${spaceGrotesk.variable}`}>
       <body className={montserrat.className}>
         <Navbar />
-        <main className="min-h-screen pt-20">
+        <main className="min-h-screen">
           {children}
         </main>
         <Footer />

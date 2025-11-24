@@ -5,10 +5,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { usePathname, useRouter } from 'next/navigation'
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +21,20 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault()
+    if (pathname === '/') {
+      // Scroll to absolute top
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    } else {
+      // Navigate to home then scroll to top
+      router.push('/')
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }, 100)
+    }
+  }
+
   return (
     <nav className={cn(
       "fixed top-0 w-full z-50 transition-all duration-300",
@@ -26,7 +43,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" onClick={handleLogoClick} className="flex items-center gap-3">
               {/* Logo with 3D Rounded Border Effect - 10% bigger */}
               <div className="h-16 w-16 rounded-xl flex items-center justify-center p-1.5 shadow-lg overflow-hidden" style={{ 
                 borderWidth: '3px',
