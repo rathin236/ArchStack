@@ -23,7 +23,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-6 text-lg text-muted-foreground max-w-xl"
           >
-            We architect data ecosystems that don't just store information—they unlock competitive advantage. From messy pipelines to strategic intelligence platforms.
+            We architect data ecosystems that don't just store information - they unlock competitive advantage. From messy pipelines to strategic intelligence platforms.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
