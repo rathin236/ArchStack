@@ -47,7 +47,7 @@ export function Contact() {
                   <Mail className="h-6 w-6 mt-1 opacity-90" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="opacity-90">Rathin236@gmail.com</p>
+                    <p className="opacity-90">rathin236@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">

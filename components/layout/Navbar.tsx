@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, Sparkles } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 export function Navbar() {
@@ -46,8 +46,6 @@ export function Navbar() {
               <span className="text-2xl font-bold text-foreground" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
                 ArchStack
               </span>
-              {/* Gold Sparkles Icon */}
-              <Sparkles className="h-5 w-5 text-primary ml-1" strokeWidth={2.5} fill="currentColor" />
             </Link>
           </div>
           <div className="hidden md:block">

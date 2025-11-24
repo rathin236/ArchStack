@@ -50,10 +50,13 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="https://www.linkedin.com/company/archstack/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="ArchStack on LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link href="https://www.linkedin.com/in/rathinsharma/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="Rathin Sharma on LinkedIn">
+                <Linkedin className="h-5 w-5" />
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Twitter">
                 <Twitter className="h-5 w-5" />
               </Link>
             </div>
