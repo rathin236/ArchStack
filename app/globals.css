@@ -46,7 +46,7 @@
 }
 
 :root {
-  /* Elegant Theme - Clean White with Gold Accent (#bf9b30) */
+  /* Professional Theme - Clean White with Gold Accent (#bf9b30) */
   --background: hsl(0 0% 100%);
   --foreground: hsl(0 0% 9%);
 
@@ -76,6 +76,10 @@
   --ring: hsl(43 60% 47%);
   
   --radius: 0.25rem;
+}
+
+html {
+  scroll-padding-top: 140px;
 }
 
 body {

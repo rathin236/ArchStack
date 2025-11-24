@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <div className="bg-background min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden bg-primary/5">
+      <section className="relative pt-32 pb-20 overflow-hidden bg-primary/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             <motion.h1 
@@ -84,23 +84,22 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Rathin Sharma */}
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-card border border-border/50 rounded-xl overflow-hidden shadow-sm max-w-md w-full hover:shadow-md transition-shadow"
+              className="bg-card border border-border/50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="p-8 text-center">
                 <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
                    <span className="text-4xl font-bold text-primary">RS</span>
-                   {/* Placeholder for actual image if available */}
-                   {/* <Image src="/team/rathin.jpg" alt="Rathin Sharma" width={128} height={128} className="rounded-full object-cover" /> */}
                 </div>
                 <h3 className="text-2xl font-bold text-foreground">Rathin Sharma</h3>
-                <p className="text-primary font-medium mb-4">Owner & Principal Architect</p>
+                <p className="text-primary font-medium mb-4">Managing Director & Principal Architect</p>
                 <p className="text-muted-foreground mb-6">
-                  With over 5 years of experience in data architecture and engineering, Rathin specializes in designing scalable data systems and optimizing workflows to support critical business objectives.
+                  With over 5 years of experience spanning finance, operations, supply chain, and software-focused companies, Rathin brings a well-rounded perspective having worked in every role of the data pyramid, from engineering to architecture to analytics.
                 </p>
                 <div className="flex justify-center gap-4">
                   <Link href="https://rathinsharma.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="Personal Website">
@@ -108,6 +107,32 @@ export default function AboutPage() {
                     <Award className="h-5 w-5" />
                   </Link>
                   <Link href="https://www.linkedin.com/in/rathinsharma/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="LinkedIn Profile">
+                    <span className="sr-only">LinkedIn</span>
+                    <Linkedin className="h-5 w-5" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Himani Patel */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-card border border-border/50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="p-8 text-center">
+                <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
+                   <span className="text-4xl font-bold text-primary">HP</span>
+                </div>
+                <h3 className="text-2xl font-bold text-foreground">Himani Patel</h3>
+                <p className="text-primary font-medium mb-4">Managing Director & Solutions Architect</p>
+                <p className="text-muted-foreground mb-6">
+                  Coming from a product-based software company background, Himani brings deep expertise in solution architecture and strategic consulting, helping organizations design and implement data-driven solutions that scale.
+                </p>
+                <div className="flex justify-center gap-4">
+                  <Link href="#" className="text-muted-foreground hover:text-primary transition-colors" title="LinkedIn Profile">
                     <span className="sr-only">LinkedIn</span>
                     <Linkedin className="h-5 w-5" />
                   </Link>
