@@ -53,9 +53,6 @@ export function Footer() {
               <Link href="https://www.linkedin.com/company/archstack/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="ArchStack on LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </Link>
-              <Link href="https://www.linkedin.com/in/rathinsharma/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="Rathin Sharma on LinkedIn">
-                <Linkedin className="h-5 w-5" />
-              </Link>
               <Link href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Twitter">
                 <Twitter className="h-5 w-5" />
               </Link>

@@ -17,7 +17,7 @@ export default function AboutPage() {
               animate={{ opacity: 1, y: 0 }}
               className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl"
             >
-              We Are <span className="text-primary">Archstack</span>
+              We Are <span className="text-primary">ArchStack</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -103,11 +103,11 @@ export default function AboutPage() {
                   With over 5 years of experience in data architecture and engineering, Rathin specializes in designing scalable data systems and optimizing workflows to support critical business objectives.
                 </p>
                 <div className="flex justify-center gap-4">
-                  <Link href="https://rathinsharma.com" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Link href="https://rathinsharma.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="Personal Website">
                     <span className="sr-only">Website</span>
                     <Award className="h-5 w-5" />
                   </Link>
-                  <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Link href="https://www.linkedin.com/in/rathinsharma/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="LinkedIn Profile">
                     <span className="sr-only">LinkedIn</span>
                     <Linkedin className="h-5 w-5" />
                   </Link>
@@ -185,4 +185,3 @@ export default function AboutPage() {
     </div>
   )
 }
-
