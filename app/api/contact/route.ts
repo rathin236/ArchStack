@@ -18,6 +18,7 @@ async function sendPushoverNotification(name: string, email: string, message: st
 ${message}
 
 <i>⚡ High Priority - Direct Contact Form Submission</i>
+<i>📧 Forward to: inquiries@archstack.ca</i>
   `.trim()
 
   try {
@@ -30,7 +31,7 @@ ${message}
         token: appToken,
         user: userKey,
         message: formattedMessage,
-        title: '🔴 ArchStack: HOT LEAD',
+        title: '🔴 ArchStack: HOT LEAD (inquiries@archstack.ca)',
         html: 1,
         priority: 1,
         sound: 'siren'

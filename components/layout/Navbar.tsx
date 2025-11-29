@@ -67,9 +67,10 @@ export function Navbar() {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
+              <Link href="/" className="hover:text-primary transition-colors text-sm font-medium text-foreground/80">Home</Link>
               <Link href="/#services" className="hover:text-primary transition-colors text-sm font-medium text-foreground/80">Services</Link>
-              <Link href="/#process" className="hover:text-primary transition-colors text-sm font-medium text-foreground/80">Process</Link>
               <Link href="/about" className="hover:text-primary transition-colors text-sm font-medium text-foreground/80">About</Link>
+              <Link href="/case-studies" className="hover:text-primary transition-colors text-sm font-medium text-foreground/80">Case Studies</Link>
               <Link href="/careers" className="hover:text-primary transition-colors text-sm font-medium text-foreground/80">Careers</Link>
               <Link href="/#contact" className="bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2 rounded text-sm font-semibold transition-all">
                 Contact
@@ -91,9 +92,10 @@ export function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white border-b border-border">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <Link href="/" className="block hover:text-primary px-3 py-2 text-base font-medium text-foreground/80 transition-colors" onClick={() => setIsOpen(false)}>Home</Link>
             <Link href="/#services" className="block hover:text-primary px-3 py-2 text-base font-medium text-foreground/80 transition-colors" onClick={() => setIsOpen(false)}>Services</Link>
-            <Link href="/#process" className="block hover:text-primary px-3 py-2 text-base font-medium text-foreground/80 transition-colors" onClick={() => setIsOpen(false)}>Process</Link>
             <Link href="/about" className="block hover:text-primary px-3 py-2 text-base font-medium text-foreground/80 transition-colors" onClick={() => setIsOpen(false)}>About</Link>
+            <Link href="/case-studies" className="block hover:text-primary px-3 py-2 text-base font-medium text-foreground/80 transition-colors" onClick={() => setIsOpen(false)}>Case Studies</Link>
             <Link href="/careers" className="block hover:text-primary px-3 py-2 text-base font-medium text-foreground/80 transition-colors" onClick={() => setIsOpen(false)}>Careers</Link>
             <Link href="/#contact" className="block bg-primary text-primary-foreground px-3 py-2 rounded text-base font-semibold" onClick={() => setIsOpen(false)}>Contact</Link>
           </div>

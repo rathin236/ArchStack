@@ -6,26 +6,53 @@ import Link from "next/link"
 
 const cases = [
   {
+    title: "Global Sales Storytelling Dataset",
+    client: "Multinational Seafood Company",
+    description:
+      "Curated a single global sales dataset on a medallion architecture (bronze → silver → gold), with a canonical customer and account model that reconciled CRM, billing, and product‑usage data. On top of the gold layer, we exposed a governed semantic model for \"sales stories\" that surfaces pipeline health, expansion opportunities, and regional narratives for leadership—turning ad‑hoc slide creation into a live, always‑current story.",
+    tags: ["Global Dataset", "Canonical Model", "Medallion", "Sales Analytics", "Semantic Layer"],
+    icon: BarChart,
+  },
+  {
+    title: "Portfolio Analytics for Private Equity",
+    client: "Middle‑Market Private Equity Firm",
+    description:
+      "Built a unified portfolio data platform that standardized financials, KPIs, and operational metrics across 18 portfolio companies. Implemented a canonical chart of accounts, automated ETL from ERP and CRM systems, and delivered a Deal & Portfolio cockpit that lets partners drill from fund‑level returns down to company and initiative—cutting quarterly reporting cycles from weeks to days.",
+    tags: ["Private Equity", "Portfolio Reporting", "KPI Standardization"],
+    icon: Database,
+  },
+  {
+    title: "Monetizable Data Product for a Utility",
+    client: "Regional Energy & Utilities Provider",
+    description:
+      "Designed a unified asset and meter data model that combined SCADA, outage, and customer usage feeds into a clean, documented layer. On top of it, we launched a subscription‑based data product for grid planners and large industrial customers, enabling the utility to safely expose anonymized reliability and load profiles—creating a new recurring revenue stream of over $1.2M annually within the first 18 months.",
+    tags: ["Utilities", "Data Product", "Data Monetization"],
+    icon: BarChart,
+  },
+  {
     title: "Financial Data Modernization",
     client: "Leading Fintech Firm",
-    description: "Migrated legacy on-premise data warehouses to a modern Snowflake implementation, reducing query times by 40% and enabling real-time reporting.",
-    tags: ["Snowflake", "dbt", "Migration"],
-    icon: Database
+    description:
+      "Re-platformed a fragmented on‑prem warehouse into a unified Snowflake environment, rebuilt core models in dbt, and automated nightly loads—cutting average query times by 40%, reducing reporting outages, and unlocking self‑serve analytics for risk and finance teams.",
+    tags: ["Snowflake", "dbt", "Modernization"],
+    icon: Database,
   },
   {
-    title: "Retail Analytics Dashboard",
+    title: "Retail Analytics & Store Performance",
     client: "Global Retailer",
-    description: "Developed a comprehensive Tableau suite providing store managers with predictive inventory insights, reducing stockouts by 15%.",
-    tags: ["Tableau", "Predictive Analytics", "Python"],
-    icon: BarChart
+    description:
+      "Designed a company‑wide semantic layer and Tableau dashboard suite that combined POS, inventory, and marketing data into a single view. Store managers now get predictive inventory alerts and promo performance insights, contributing to a 15% reduction in stockouts across key regions.",
+    tags: ["Tableau", "Predictive Analytics", "Store Ops"],
+    icon: BarChart,
   },
   {
-    title: "Real-time Fraud Detection",
+    title: "Real‑time Fraud Detection Pipeline",
     client: "Major Bank",
-    description: "Architected a streaming data pipeline using Kafka and Spark to detect fraudulent transactions with sub-second latency.",
-    tags: ["Kafka", "Spark", "Cybersecurity"],
-    icon: TrendingUp
-  }
+    description:
+      "Implemented a Kafka- and Spark‑based streaming pipeline that scores card transactions in near real time, with feature stores feeding machine‑learning models and feedback loops from fraud analysts, helping the bank catch suspicious activity in under a second.",
+    tags: ["Kafka", "Spark", "Fraud Detection"],
+    icon: TrendingUp,
+  },
 ]
 
 export default function CaseStudies() {

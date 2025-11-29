@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import { Search, Users, Zap, Coffee } from "lucide-react"
-import Link from "next/link"
 
 const benefits = [
   {
@@ -28,10 +27,18 @@ const benefits = [
 ]
 
 export default function Careers() {
+  // When positions are added, pass the position name here
+  const positionName = "[Position Name]" // Placeholder for position name
+  
+  const getMailtoLink = (position: string) => {
+    const subject = encodeURIComponent(`Resume for ${position}`)
+    return `mailto:hr@archstack.ca?subject=${subject}`
+  }
+
   return (
     <div className="min-h-screen bg-background pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-0">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -49,8 +56,8 @@ export default function Careers() {
           </motion.p>
         </div>
 
-        {/* Benefits Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        {/* Benefits Grid (temporarily hidden to remove extra space above Open Positions) */}
+        <div className="hidden">
           {benefits.map((benefit, index) => (
             <motion.div
               key={benefit.title}
@@ -70,7 +77,7 @@ export default function Careers() {
         </div>
 
         {/* Open Roles Section */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto mt-10">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-semibold text-foreground">Open Positions</h2>
             <span className="text-sm text-muted-foreground bg-secondary px-3 py-1 rounded-full">
@@ -84,12 +91,12 @@ export default function Careers() {
               <p className="text-muted-foreground mb-6">
                 We don't have any specific openings right now, but we're always interested in meeting talented people.
               </p>
-              <Link 
-                href="/#contact"
+              <a 
+                href={getMailtoLink(positionName)}
                 className="inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg text-primary-foreground bg-primary hover:bg-primary/90 transition-colors"
               >
                 Send us your resume
-              </Link>
+              </a>
             </div>
           </div>
         </div>

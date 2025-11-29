@@ -47,21 +47,25 @@ export function Contact() {
                   <Mail className="h-6 w-6 mt-1 opacity-90" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="opacity-90">rathin236@gmail.com</p>
+                    <a href="mailto:inquiries@archstack.ca" className="opacity-90 hover:underline">
+                      inquiries@archstack.ca
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <Phone className="h-6 w-6 mt-1 opacity-90" />
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="opacity-90">(519) 729-9640</p>
+                    <a href="tel:+15197299640" className="opacity-90 hover:underline">
+                      (519) 729-9640
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <MapPin className="h-6 w-6 mt-1 opacity-90" />
                   <div>
                     <h3 className="font-semibold">Office</h3>
-                    <p className="opacity-90">201 Tartan Street, Saint John, NB</p>
+                    <p className="opacity-90">Saint John, NB</p>
                   </div>
                 </div>
               </div>

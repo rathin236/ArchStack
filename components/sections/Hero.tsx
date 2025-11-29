@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-32 lg:pb-32 xl:pb-36">
+    <section className="relative overflow-hidden pt-40 pb-12 sm:pt-48 sm:pb-20 lg:pt-56 lg:pb-28 xl:pt-64 xl:pb-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-2xl">
           <motion.h1

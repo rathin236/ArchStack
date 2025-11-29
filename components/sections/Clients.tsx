@@ -14,6 +14,7 @@ const directClients = [
 const indirectClients = [
   { name: "Red Hat", logo: "Red Hat" },
   { name: "Liberty Mutual", logo: "Liberty Mutual" },
+  { name: "HarbourVest", logo: "HarbourVest" },
 ]
 
 export function Clients() {

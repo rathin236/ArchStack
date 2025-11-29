@@ -33,10 +33,10 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-foreground tracking-wider uppercase mb-4">Services</h3>
             <ul className="space-y-3">
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">Data Consulting</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">Data Architecture</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">Business Analysis</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm">Visualization</Link></li>
+              <li><span className="text-muted-foreground text-sm">Data Consulting</span></li>
+              <li><span className="text-muted-foreground text-sm">Data Architecture</span></li>
+              <li><span className="text-muted-foreground text-sm">Business Analysis</span></li>
+              <li><span className="text-muted-foreground text-sm">Visualization</span></li>
             </ul>
           </div>
           <div>
