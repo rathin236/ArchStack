@@ -84,13 +84,13 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="flex justify-center max-w-4xl mx-auto">
             {/* Rathin Sharma */}
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-card border border-border/50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+              className="bg-card border border-border/50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow w-full max-w-md"
             >
               <div className="p-8 text-center">
                 <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
@@ -114,31 +114,6 @@ export default function AboutPage() {
               </div>
             </motion.div>
 
-            {/* Himani Patel */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="bg-card border border-border/50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
-            >
-              <div className="p-8 text-center">
-                <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
-                   <span className="text-4xl font-bold text-primary">HP</span>
-                </div>
-                <h3 className="text-2xl font-bold text-foreground">Himani Patel</h3>
-                <p className="text-primary font-medium mb-4">Managing Director & Solutions Architect</p>
-                <p className="text-muted-foreground mb-6">
-                  Coming from a product-based software company background, Himani brings deep expertise in solution architecture and strategic consulting, helping organizations design and implement data-driven solutions that scale.
-                </p>
-                <div className="flex justify-center gap-4">
-                  <Link href="#" className="text-muted-foreground hover:text-primary transition-colors" title="LinkedIn Profile">
-                    <span className="sr-only">LinkedIn</span>
-                    <Linkedin className="h-5 w-5" />
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>

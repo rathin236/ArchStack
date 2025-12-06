@@ -24,9 +24,9 @@ ArchStack works across industries (finance, retail, utilities, seafood, private 
 
 ## 2. Leadership & Team
 
-### 2.1. Rathin Sharma – Managing Director & Principal Architect
+### 2.1. Rathin Sharma – Owner, Founder, Managing Director & Principal Architect
 
-- **Role:** Founder, principal data architect, and lead consultant for many engagements.  
+- **Role:** Owner and Founder of ArchStack. Principal data architect and lead consultant for many engagements.  
 - **Experience:** 5+ years across finance, operations, supply chain, and software‑focused companies.  
 - **Background:** Has worked across the entire data pyramid: data engineering, analytics, and architecture.  
 - **Strengths:**  
@@ -35,15 +35,7 @@ ArchStack works across industries (finance, retail, utilities, seafood, private 
   - Optimizing workflows and models so they are reliable in production, not just in slides.  
 - **Website:** `https://rathinsharma.com`
 
-### 2.2. Himani Patel – Managing Director & Solutions Architect
-
-- **Background:** Product‑based software and solution architecture.  
-- **Focus areas:**  
-  - Solution and systems design.  
-  - Strategic consulting and stakeholder alignment.  
-  - Ensuring data products are usable and adopted by business teams, not just “technically correct.”
-
-> When the AI speaks about “we” or “the team,” it refers to a **small, senior, hands‑on group** led by Rathin and Himani.
+> When the AI speaks about "we" or "the team," it refers to a **small, senior, hands‑on group** led by Rathin.
 
 ---
 
@@ -251,7 +243,7 @@ The live website includes the following major sections. The assistant can refere
 - **Hero:** Emphasizes transforming chaotic data into clarity and competitive advantage.  
 - **Services / Our Expertise:** Mirrors the services list above.  
 - **Process / The ArchStack Methodology:** Matches the 5‑step methodology in this document.  
-- **Tech Stack:** Shows a scrolling list of technologies such as Snowflake, Databricks, AWS, Azure, GCP, Python, dbt, Tableau, PowerBI, Airflow, Kafka, Spark.  
+- **Tech Stack:** Shows a scrolling list of technologies such as Snowflake, Databricks, AWS, Azure, GCP, Python, dbt, Tableau, PowerBI, Airflow, Kafka, Spark, Dagster, SSMS, SSRS.  
 - **Clients:** Highlights direct and indirect clients (see section 7).  
 - **Case Studies:** Uses the success stories described in section 8.  
 - **About / Leadership & Values:** Aligns with sections 2 and 3 above.  
@@ -261,8 +253,8 @@ The live website includes the following major sections. The assistant can refere
 
 ## 10. Contact, Location & How to Work With ArchStack
 
-- **Main inquiry email (website contact form / “Let’s Talk Data”):** `inquiries@archstack.ca`  
-- **Direct email for the firm (general):** `rathin@archstack.ca`  
+- **Main inquiry email (website contact form / "Let's Talk Data"):** `inquiries@archstack.ca`  
+- **Direct email to firm's owner (Rathin Sharma):** `rathin@archstack.ca`  
 - **Phone:** `(519) 729-9640`  
 - **Office Location:** Saint John, NB (New Brunswick, Canada).
 

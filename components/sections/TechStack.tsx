@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 
 const techs = [
-  "Snowflake", "Databricks", "AWS", "Azure", "GCP", "Python", "dbt", "Tableau", "PowerBI", "Airflow", "Kafka", "Spark"
+  "Snowflake", "Databricks", "AWS", "Azure", "GCP", "Python", "dbt", "Tableau", "PowerBI", "Airflow", "Kafka", "Spark", "Dagster", "SSMS", "SSRS"
 ]
 
 export function TechStack() {

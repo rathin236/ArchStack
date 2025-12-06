@@ -5,15 +5,12 @@ import { motion } from "framer-motion"
 const directClients = [
   { name: "CGS", logo: "CGS" },
   { name: "Jamlabs", logo: "Jamlabs" },
-  { name: "Cooke Inc.", logo: "Cooke Inc." },
   { name: "Launchroom.ca", logo: "Launchroom" },
-  { name: "Cayenta", logo: "Cayenta" },
-  { name: "Harris Computers", logo: "Harris Computers" },
 ]
 
 const indirectClients = [
-  { name: "Red Hat", logo: "Red Hat" },
-  { name: "Liberty Mutual", logo: "Liberty Mutual" },
+  { name: "Cooke Inc.", logo: "Cooke Inc." },
+  { name: "IBM RedHat", logo: "IBM Red Hat" },
   { name: "HarbourVest", logo: "HarbourVest" },
 ]
 
@@ -22,7 +19,7 @@ export function Clients() {
     <section className="py-12 border-y border-border/40 bg-background/50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center text-sm font-semibold text-muted-foreground tracking-wider uppercase mb-10">
-          Trusted by Industry Leaders
+          Trusted by
         </p>
         
         <div className="flex flex-wrap justify-center gap-x-12 gap-y-8 items-center opacity-80 grayscale hover:grayscale-0 transition-all duration-500 mb-8">
