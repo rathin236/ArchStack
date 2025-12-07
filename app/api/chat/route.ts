@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server'
-import OpenAI from 'openai'
 import { businessInfo } from '@/lib/business_info'
 
 // Edge runtime - works without nodejs_compat flag
@@ -79,10 +78,6 @@ ${message}
       )
     }
 
-    const openai = new OpenAI({
-      apiKey: apiKey,
-    })
-
     const systemPrompt = `You are a helpful, conversational AI consultant for ArchStack, a boutique data consulting firm. Your goal is to be informative, engaging, and keep the conversation flowing naturally.
 
 IMPORTANT CONTEXT:
@@ -103,15 +98,33 @@ Use the following business information to answer the user's questions accurately
 ${businessInfo}
     `
 
-    const completion = await openai.chat.completions.create({
-      messages: [
-        { role: 'system', content: systemPrompt },
-        { role: 'user', content: message }
-      ],
-      model: 'gpt-3.5-turbo',
+    // Use direct fetch instead of OpenAI SDK for Edge Runtime compatibility
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        model: 'gpt-3.5-turbo',
+        messages: [
+          { role: 'system', content: systemPrompt },
+          { role: 'user', content: message }
+        ],
+      }),
     })
 
-    const reply = completion.choices[0].message.content
+    if (!response.ok) {
+      const errorData = await response.text()
+      console.error('OpenAI API Error:', errorData)
+      return NextResponse.json(
+        { error: 'Failed to get response from AI' },
+        { status: response.status }
+      )
+    }
+
+    const data = await response.json()
+    const reply = data.choices[0]?.message?.content || 'Sorry, I could not generate a response.'
 
     return NextResponse.json({ reply })
   } catch (error) {
