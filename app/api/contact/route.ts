@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server'
 
+export const runtime = 'edge'
+
 async function sendPushoverNotification(name: string, email: string, message: string) {
   const userKey = process.env.PUSHOVER_USER_KEY
   const appToken = process.env.PUSHOVER_APP_TOKEN

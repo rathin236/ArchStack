@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server'
 import OpenAI from 'openai'
-import fs from 'fs/promises'
-import path from 'path'
+import { businessInfo } from '@/lib/business_info'
+
+export const runtime = 'edge'
 
 async function sendPushoverNotification(message: string, title: string = 'ArchStack Chat') {
   const userKey = process.env.PUSHOVER_USER_KEY
@@ -80,16 +81,6 @@ ${message}
     const openai = new OpenAI({
       apiKey: apiKey,
     })
-
-    // Read business info
-    const businessInfoPath = path.join(process.cwd(), 'lib', 'business_info.md')
-    let businessInfo = ''
-    try {
-      businessInfo = await fs.readFile(businessInfoPath, 'utf-8')
-    } catch (err) {
-      console.error('Failed to read business_info.md', err)
-      // Fallback or non-fatal error
-    }
 
     const systemPrompt = `You are a helpful, conversational AI consultant for ArchStack, a boutique data consulting firm. Your goal is to be informative, engaging, and keep the conversation flowing naturally.
 
