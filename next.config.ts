@@ -2,10 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  // Disable Turbopack to use webpack for Edge Runtime compatibility
-  experimental: {
-    turbo: false,
-  },
   webpack: (config, { isServer, webpack }) => {
     // Exclude Node.js modules from Edge Runtime bundles
     config.resolve.fallback = {
