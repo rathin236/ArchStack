@@ -10,3 +10,4 @@
 
 Coming from a product-based software company background, Himani brings deep expertise in solution architecture and strategic consulting, helping organizations design and implement data-driven solutions that scale.
 
+
