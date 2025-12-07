@@ -1,10 +1,5 @@
 name = "archstack-web"
 compatibility_date = "2024-12-07"
+compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
-
-# Note: For Cloudflare Pages, you need to set compatibility flags in the dashboard:
-# 1. Go to your Pages project
-# 2. Settings > Functions
-# 3. Under "Compatibility Flags", add: nodejs_compat
-# If the option doesn't exist, you may need to enable Functions first
 
