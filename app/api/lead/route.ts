@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 
+// Edge runtime - works without nodejs_compat flag
 export const runtime = 'edge'
 
 async function sendPushoverNotification(name: string, email: string, phone: string) {

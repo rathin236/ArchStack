@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import OpenAI from 'openai'
 import { businessInfo } from '@/lib/business_info'
 
+// Edge runtime - works without nodejs_compat flag
 export const runtime = 'edge'
 
 async function sendPushoverNotification(message: string, title: string = 'ArchStack Chat') {
