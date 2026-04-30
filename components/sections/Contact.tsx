@@ -56,8 +56,11 @@ export function Contact() {
                   <Phone className="h-6 w-6 mt-1 opacity-90" />
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <a href="tel:+15197299640" className="opacity-90 hover:underline">
-                      (519) 729-9640
+                    <a href="tel:+15197299640" className="block opacity-90 hover:underline">
+                      +1 (519) 729-9640
+                    </a>
+                    <a href="tel:+917096969660" className="block opacity-90 hover:underline">
+                      +91-7096969660
                     </a>
                   </div>
                 </div>
