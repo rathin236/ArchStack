@@ -6,6 +6,9 @@ import Link from "next/link"
 import Image from "next/image"
 
 export default function AboutPage() {
+  // Keep the leadership section archived in code, but hidden from the page.
+  const showLeadershipSection = false
+
   return (
     <div className="bg-background min-h-screen">
       {/* Hero Section */}
@@ -74,49 +77,50 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Leadership Team */}
-      <section className="py-20 bg-secondary/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Leadership</h2>
-            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Expertise rooted in years of solving complex data challenges.
-            </p>
-          </div>
+      {showLeadershipSection && (
+        <section className="py-20 bg-secondary/5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Leadership</h2>
+              <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                Expertise rooted in years of solving complex data challenges.
+              </p>
+            </div>
 
-          <div className="flex justify-center max-w-4xl mx-auto">
-            {/* Rathin Sharma */}
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-card border border-border/50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow w-full max-w-md"
-            >
-              <div className="p-8 text-center">
-                <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
-                   <span className="text-4xl font-bold text-primary">RS</span>
+            <div className="flex justify-center max-w-4xl mx-auto">
+              {/* Rathin Sharma */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-card border border-border/50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow w-full max-w-md"
+              >
+                <div className="p-8 text-center">
+                  <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
+                     <span className="text-4xl font-bold text-primary">RS</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground">Rathin Sharma</h3>
+                  <p className="text-primary font-medium mb-4">Managing Director & Principal Architect</p>
+                  <p className="text-muted-foreground mb-6">
+                    With over 5 years of experience spanning finance, operations, supply chain, and software-focused companies, Rathin brings a well-rounded perspective having worked in every role of the data pyramid, from engineering to architecture to analytics.
+                  </p>
+                  <div className="flex justify-center gap-4">
+                    <Link href="https://rathinsharma.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="Personal Website">
+                      <span className="sr-only">Website</span>
+                      <Award className="h-5 w-5" />
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/rathinsharma/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="LinkedIn Profile">
+                      <span className="sr-only">LinkedIn</span>
+                      <Linkedin className="h-5 w-5" />
+                    </Link>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground">Rathin Sharma</h3>
-                <p className="text-primary font-medium mb-4">Managing Director & Principal Architect</p>
-                <p className="text-muted-foreground mb-6">
-                  With over 5 years of experience spanning finance, operations, supply chain, and software-focused companies, Rathin brings a well-rounded perspective having worked in every role of the data pyramid, from engineering to architecture to analytics.
-                </p>
-                <div className="flex justify-center gap-4">
-                  <Link href="https://rathinsharma.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="Personal Website">
-                    <span className="sr-only">Website</span>
-                    <Award className="h-5 w-5" />
-                  </Link>
-                  <Link href="https://www.linkedin.com/in/rathinsharma/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" title="LinkedIn Profile">
-                    <span className="sr-only">LinkedIn</span>
-                    <Linkedin className="h-5 w-5" />
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
 
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Core Values */}
       <section className="py-20">
